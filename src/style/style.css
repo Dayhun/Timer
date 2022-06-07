@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(to left, #A5B6EE, #F0F4FF);
+}
+
+.timer-header {
+    text-align: center;
+    margin: 72px auto 0;
+}
+
+.title-img {
+    width: 244px;
+}
+
+.timer-container {
+    margin: 60px auto 0;
+    width: 400px;
+    height: 360px;
+    background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+    padding: 48px 44px 40px;
+    box-sizing: border-box;
+}
+
+.timer-container .timer-title {
+    text-align: center;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFF;
+}
+
+.timer-container .timer-title::after {
+    content: "";
+    display: block;
+    width: 312px;
+    height: 1px;
+    background-color: #3D538A;
+    margin: 23px auto 0;
+}
+
+.timer-container .timer-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    padding: 51px 14px 40px;
+}
+
+.timer-container .timer-list li {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%);
+    border: 1px solid #354971;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.timer-container .timer-button {
+    padding: 0px 38px;
+}
+
+.timer-container .timer-button button {
+    width: 112px;
+    height: 48px;
+    box-sizing: border-box;
+    background: #324577;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    color: #617199;
+}
+
+.timer-container .timer-button .start-btn::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/icon/icon-start-disabled.png");
+    width: 15px;
+    height: 17px;
+    background-size: cover;
+    left: 109px;
+    bottom: 235px;
+}
